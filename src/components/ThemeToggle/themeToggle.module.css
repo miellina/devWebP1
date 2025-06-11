@@ -1,0 +1,94 @@
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.backButton {
+  align-self: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.lightButton {
+  background-color: #cfe6ff;
+  color: rgb(0, 0, 0);
+}
+
+.darkButton {
+  background-color: #002d70;
+  color: #ffffff;
+}
+
+.lightButton:hover,
+.darkButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lightTitle,
+.darkTitle {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.lightTitle {
+  color: #333333;
+}
+
+.darkTitle {
+  color: #ffffff;
+}
+
+.themeButton {
+  padding: 40px 40px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 80px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lightThemeButton {
+  background-color: #002b57;
+  color: #ffffff;
+}
+
+.darkThemeButton {
+  background-color: #fff8d5;
+  color: #000000;
+}
+
+.themeButton:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 192, 96, 0.447);
+}
